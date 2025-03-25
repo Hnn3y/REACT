@@ -2,19 +2,21 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Food from './Food'
+import Greeting from './Greeting'
+import Video from './Video'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
   return (
-    <>
-    
-      <h1>Hello World!</h1>
+    <div>
+      <Greeting/>
       <div>
-      <h2>My Favorite food</h2>
+      <h2>My Favorite foods</h2>
+      <Food/>
       </div>
-    </>
+    </div>
   )
 }
 
-export default App
+export default App;

@@ -5,6 +5,7 @@ function Food() {
             <li>Rice</li>
             <li>Beans</li>
             <li>Cucumber</li> 
+            <li>Bread</li> 
         </ol>
     </div>
     );
