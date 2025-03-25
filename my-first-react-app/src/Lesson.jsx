@@ -1,6 +1,13 @@
-function Lesson (){
-    const animals = ["Lion","Cow", "Snake", "Chicken"]
+import { useState } from "react";
 
+function Lesson (){
+    const animals = ["Lion","Cow", "Snake", "Chicken"] 
+
+    const [counter, setCounter] = useState (0);
+
+    const increment = () => {
+      setCounter(counter + 2 );
+    };
     return( 
         <div className="container"> 
         <svg>
@@ -17,6 +24,10 @@ function Lesson (){
                 return <li key={animal}>{animal}</li>;
              })}
           </ul>
+
+          
+          <p>{counter}</p>
+          <button onClick={ increment }>Increase</button>
         </div>
     );
     
