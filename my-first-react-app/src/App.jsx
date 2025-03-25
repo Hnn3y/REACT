@@ -10,12 +10,12 @@ function App() {
  
   return (
     <div>
-      <Greeting/>
       <div>
       <h2>My Favorite foods</h2>
       <Food/>
       </div>
     </div>
+
   )
 }
 
